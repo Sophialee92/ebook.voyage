@@ -1,0 +1,49 @@
+@charset "utf-8"; /* 문자 코드 셋 지정(한글 깨짐 방지) */
+/* 여백 초기화 */
+body, div, img, h1, h2, h3, h4, h5, h6, p, ol, ul, li{ margin:0; padding:0; }
+/* 목록 불릿 없애기 */
+ol,ul { list-style:none; }
+/* 하이퍼링크 설정 */
+a:link, a:visited, a:hover, a:active { text-decoration:none; color:#000; }
+body { font-family:"나눔고딕"; font-size:12px; color:#000; line-height:160%; }
+.clear{ clear: both; }
+
+.guide{display:block; width:100%;}
+
+.back_btn{
+    display: block;
+    width: 51px;
+    height: 51px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0.6;
+    z-index: 999;
+}
+
+/* 맨위로가기 버튼 */
+a.jcm-top {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 51px;
+    height: 51px;
+	opacity: 0.6;
+    z-index: 777;
+    display: none;
+}
+a.jcm-top:hover, .back_btn:{opacity:0.3;}
+
+a.vistro_home, a.voyage_home, a.objet_home{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+	display: block;
+    width: 300px;
+	height: 65px;
+    z-index: 999;
+	opacity: 0.7;
+}
+.home{
+	width: 100%;
+}
